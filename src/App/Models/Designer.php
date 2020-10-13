@@ -2,7 +2,7 @@
 
 namespace Console\App\Models;
 
-class Designer extends EmployeeAbstract
+class Designer extends AbstractEmployee
 {
     public function welcome(): string
     {

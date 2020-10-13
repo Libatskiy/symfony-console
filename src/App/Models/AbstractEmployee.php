@@ -2,7 +2,7 @@
 
 namespace Console\App\Models;
 
-abstract class EmployeeAbstract implements EmployeeInterface
+abstract class AbstractEmployee implements EmployeeInterface
 {
     abstract public function welcome(): string ;
 

@@ -2,7 +2,7 @@
 
 namespace Console\App\Models;
 
-class QA extends EmployeeAbstract
+class QA extends AbstractEmployee
 {
     public function welcome(): string
     {
