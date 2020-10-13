@@ -26,6 +26,8 @@ bin/console user:developer
 - communication with manager
 6. также реализовать может ли сотрудник делать определенные действия, пример для реализации
 bin/console can:developer writeCode
+
 true
-php ./vendor/bin/console can:developer draw
+
+bin/console can:developer draw
 false
