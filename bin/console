@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Console\App\Commands\Employee\ListActions\{DeveloperDoList, ManagerDoList, QaDoList, DesignerDoList};
+use Console\App\Commands\Employee\CanEmployeeDo\{DeveloperCanDo, ManagerCanDo, QaCanDo, DesignerCanDo};
+
+$app = new Application();
+$app->add(new DeveloperDoList());
+$app->add(new ManagerDoList());
+$app->add(new QaDoList());
+$app->add(new DesignerDoList());
+$app->add(new DeveloperCanDo());
+$app->add(new ManagerCanDo());
+$app->add(new QaCanDo());
+$app->add(new DesignerCanDo());
+$app->run();
