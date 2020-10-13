@@ -2,7 +2,7 @@
 
 namespace Console\APP\Service;
 
-use Console\App\Models\EmployeeInterface;
+use Console\App\Models\EmployeeAbstract;
 
 class RepresentEmployeeService
 {
@@ -10,7 +10,7 @@ class RepresentEmployeeService
 
     protected $employee;
 
-    public function __construct(EmployeeInterface $employee)
+    public function __construct(EmployeeAbstract $employee)
     {
         $this->employee = $employee;
     }
