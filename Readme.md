@@ -19,13 +19,13 @@
 4. использование composer https://getcomposer.org/
 5. использование https://symfony.com/doc/current/components/console.html для запуска скрипта
 пример запуска:
-php ./vendor/bin/console user:developer
+bin/console user:developer
 на выходе должны получить подобное
 - code writing
 - code testing
 - communication with manager
 6. также реализовать может ли сотрудник делать определенные действия, пример для реализации
-php ./vendor/bin/console can:developer writeCode
+bin/console can:developer writeCode
 true
 php ./vendor/bin/console can:developer draw
 false
