@@ -2,11 +2,11 @@
 
 namespace Console\App\Factory;
 
-use Console\App\Models\{Designer, Developer, Manager, QA};
+use Console\App\Models\{AbstractEmployee, Designer, Developer, Manager, QA};
 
 class EmployeeFactory
 {
-    public static function getEmployee(string $speciality)
+    public static function getEmployee(string $speciality): AbstractEmployee
     {
         switch ($speciality) {
             case 'developer':
