@@ -21,7 +21,7 @@ abstract class AbstractEmployeeDoList extends AbstractEmployeeCommand
         $output->writeln($representEmployeeService->getPossibilityList());
     }
 
-    protected function getChecking(): string
+    protected function getPrefix(): string
     {
         return 'user';
     }

@@ -22,7 +22,7 @@ abstract class AbstractCanEmployeeDo extends AbstractEmployeeCommand
         $output->writeln($representEmployeeService->canDo($input->getArgument('action')));
     }
 
-    protected function getChecking(): string
+    protected function getPrefix(): string
     {
         return 'can';
     }

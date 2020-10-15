@@ -11,11 +11,11 @@ abstract class AbstractEmployeeCommand extends Command
     protected $representService;
 
     abstract protected function getSpeciality(): string ;
-    abstract protected function getChecking(): string ;
+    abstract protected function getPrefix(): string ;
 
     protected function configure()
     {
-        $this->setName($this->getChecking() . ':' . $this->getSpeciality());
+        $this->setName($this->getPrefix() . ':' . $this->getSpeciality());
     }
 
     protected function getEmployee(): AbstractEmployee
